@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subcontractors",
+  "info": {
+    "singularName": "subcontractor",
+    "pluralName": "subcontractors",
+    "displayName": "Subcontractor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "company_address": {
+      "type": "text",
+      "required": true
+    },
+    "TIN": {
+      "type": "string",
+      "maxLength": 10,
+      "unique": true
+    },
+    "company_size": {
+      "type": "integer",
+      "required": true,
+      "min": 2,
+      "max": 1000
+    }
+  }
+}
