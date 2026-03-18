@@ -40,10 +40,15 @@ Strapi gives you many possible deployment options for your project including [St
 yarn strapi deploy
 ```
 
-### Set the environment variable locally
-In your project's .env file, add a unique, strong, randomly generated string for the ADMIN_JWT_SECRET variable. You can generate one using Node.js with a command like `node -e "console.log(crypto.randomBytes(16).toString('base64'))".`
+### Set the environment variables locally
+In your project's .env file, set environment variables locally by adding unique, strong, randomly generated strings for the following:
+- APP_KEYS="toBeModified1,toBeModified2"
+- API_TOKEN_SALT=tobemodified
+- ADMIN_JWT_SECRET=tobemodified
+- TRANSFER_TOKEN_SALT=tobemodified
+- JWT_SECRET=tobemodified
+- ENCRYPTION_KEY=tobemodified
 
-```
-ADMIN_JWT_SECRET="your_super_secret_and_unique_key_here"
-```
+You can generate one using Node.js with a command like `node -e "console.log(crypto.randomBytes(16).toString('base64'))".`
+
 
