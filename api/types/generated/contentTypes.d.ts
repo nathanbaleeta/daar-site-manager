@@ -464,7 +464,9 @@ export interface ApiSubcontractorSubcontractor
       'api::subcontractor.subcontractor'
     > &
       Schema.Attribute.Private;
+    primary_contact: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    secondary_contact: Schema.Attribute.String;
     TIN: Schema.Attribute.String &
       Schema.Attribute.Unique &
       Schema.Attribute.SetMinMaxLength<{
